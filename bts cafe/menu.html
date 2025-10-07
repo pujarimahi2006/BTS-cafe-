@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Purple Cafe - Menu</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#bf8cf2",
+            "background-light": "#f7f6f8",
+            "background-dark": "#191121",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="min-h-screen flex flex-col">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-4xl">
+              local_cafe
+            </span>
+<h1 class="text-2xl font-bold text-gray-900 dark:text-white">Purple Cafe</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="code.html">Home</a>
+<a class="text-sm font-semibold text-primary" href="menu.html">Menu</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 bg-primary text-white font-bold text-sm px-4 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined">
+                shopping_cart
+              </span>
+<span>Cart (0)</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">Our Menu</h2>
+<p class="text-lg text-gray-600 dark:text-gray-400 mb-8">Crafted with love and a touch of purple magic.</p>
+<div class="sticky top-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm py-4 mb-8 z-10">
+<div class="flex justify-center border-b border-gray-200 dark:border-gray-700">
+<nav aria-label="Tabs" class="-mb-px flex gap-6">
+<a class="shrink-0 border-b-2 border-primary px-1 pb-4 text-sm font-semibold text-primary" href="#">Coffee &amp; Tea</a>
+<a class="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-primary hover:border-primary transition-colors" href="#">Desserts</a>
+<a class="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-primary hover:border-primary transition-colors" href="#">Savory Bites</a>
+<a class="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-primary hover:border-primary transition-colors" href="#">Korean Food</a>
+<a class="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-primary hover:border-primary transition-colors" href="#">Merchandise</a>
+</nav>
+</div>
+</div>
+<div class="space-y-16">
+<section id="coffee-tea">
+<h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Coffee &amp; Tea</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Purple Latte</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">A signature latte with a hint of lavender and a touch of sweetness.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$5.50</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Purple Latte" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIF55aY_zN3HVVmuYeOkhTYcXwpcidVQ8SDm3wGnyFhOGVssrc0ZCgjkuQybZ2TfsavfNtLagwlRU-Zqu0wG770MbTO0EaoVzO-s25Eip-adpB7cWLVdMiTJWMyqagls_UYh9KLm0LFkH66q-3Vz1wU6V2ecZV8Di3pA8WydJ1dxYluhnnUj-ghFwia9hk0TM17ez6oIs3CJWpk5MexTRMx13_T4FAXzVJUTpEQqMMPu4SYPgFaUfh_vs0NDHnL-CApUfSY6JsTQ"/>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Golden Caramel Macchiato</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">A layered macchiato with rich caramel and a smooth espresso base.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$6.00</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Golden Caramel Macchiato" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjdc_aF_Lnb30nY-62XxIGMpmWCpSYseuPAsqKAUL2YrVzjCEDARrKzhSJ5Xex77KN8Pt0NS5PWltfD2bQc-AgvHSM-0JkQ8h8Aw290QwXbU7-503TgrQF5RPosVIAd2MPZaVLgclq8S3EgPFGO9b4w2O9fQcz1dODSHJPxHt96sI_MKsAMc8IhiAf_RyttDGiop9vZITeAMvdco4eby_2zSqUnT-zH6OhujsFUp53pbwW72AEi2wkWy2NdMs-G5sjPilNZZsQCg"/>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Blueberry Bliss Tea</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">A refreshing iced tea infused with blueberry and a hint of mint.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$4.75</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Blueberry Bliss Tea" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfiF63eI_SEkYsb053nsRxTXXCLl55Rf4qsd847w0KiMX7qVi-s4ygmxC8Ok5GJPGjus58t4wM5WUV5qKUmzYmTT3CUWsKY59MkEDRQHuusmvBeiZ0Tc0E15r1sCCl16xhUmVnhAHhI6Fe69E9GiIXvK7UgcYH9729T_1E4Vk0mAPmN8vlqaOWw23Uw2f1KR6k-1HLNIChGZl0XDbiter47vGvXH9_SSRSOhUPX51SkZlORMlBg7tgmghoRPmN9_CzPTkUOBipAA"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="desserts">
+<h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Desserts</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Galaxy Cupcake</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">A vanilla cupcake with a swirl of galaxy-themed frosting and edible glitter.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$3.25</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Galaxy Cupcake" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjCsQc5jj7qdghrG4WAvuivfVqJiHFgsXk4XzjGYPsJsvkh-LzAlCYQlXEcvASRiCmFjWKhSpI_GZK6XUENvwUvSlniSZrLOegeq1fgXv6x2lBgcBrmOBpdrdsJaiFlQafCWNSP_XR79hyqROS7M3kK5QcHslnZDZq-M3uWW45QETxHcgz9WxJPiQHwGijaOGG2hP_SgAT6m4-cBi9jSIv4a5JwA6GNh6MJz2Iio2SYsgj5BRHta1SnUhLubJoXXbukMqIJvOKw"/>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Moonlight Cheesecake</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">A creamy cheesecake with a blueberry swirl and a graham cracker crust.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$7.00</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Moonlight Cheesecake" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn3fKqSQxZbdMG8lRzOe6g4y3UBM0BUdYZYS4WuOGZpNKt0ifOiNL6y6PWAQq8-lEupwnMZj7qjbKOexWqL2hureORL22thkGYXcU11oacrhY4z5KbTgtsFpq3uCFqYCldPlWSTw_u5ChHV2R-3J4jyegy7pFimpXEyFuC71czRNvDYaNLG14iAkkgiUh6QGFlvKKuLjgvdbVVNDPeKS363DVlr7vfRhjZGq0kvVvTO49-9BHVWFlGpi0FzvW0GS_lGNI3tQINBQ"/>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Starlight Macarons</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">A set of colorful macarons with a variety of flavors.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$8.50</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Starlight Macarons" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP2SMyA5o9Sr0HLTPzedSDzxBZtGuxPMnsHiA0JXUxFrs0r_hZI4RmdBjV3teOEGPArAD08gqsi-BvD258wmO4hQ18TtRevkhluShiOtIELZBJ0_cFBQ5DHncxABOHZgQ8sO_07KGn2V0X_Pep-Rl-zJR1qsdTlprAU4_QB6gOxGVgkqxFffHjeyIyz-cc0RubbKOs7TMMcKMOAUP0YrMa1D6wtyJDxrR9wElC_mkNrPsLUBtBHCQUlm9oqDuP4O2O0lRxKMwpqA"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="savory-bites">
+<h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Savory Bites</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Purple Croissant</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">A flaky croissant with a purple-colored filling and a dusting of powdered sugar.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$4.00</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Purple Croissant" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_TO-5bJePSKLw72lc122OnweIE93rTmJgo2OT91m_1JMA9zX4UzJrVLWL22IRJ8lPuaVcyoMjcq6sZ5i75kXyMMCIdg7tGxAQ90oSVRkdPm-RBS28kVZWqEp9dNVZO-cPiGJoZcHtl67i50BGcNrycKmxS7etQsy9a5HwsWZSzUquU5QhezsOvhdYyOyf3N-928q2CyUWIcU6_Kt2jYdX5WqY3UgqgR5mgxkdtpIgbK3FdUDbnr5zsylo5r4PY1zli5AS0tWG_Q"/>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Golden Honey Toast</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">Thick toast drizzled with honey and topped with a scoop of vanilla ice cream.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$6.50</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Golden Honey Toast" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWUDb5LPtU8pipyULlicQdZS3CcyVfAvZoJsju-UmVtzhlI-Iw_ZcRWEEsHJ6rSlF4VJhofBggoXuxGNCDkNQA9Sr5HFu6IOhwLZbhxbmbS9LunJE_xduTCVRdcNms2SmkxdwwwPuy8hR7dj-pf-GIsPgreybgD37Z7hJXgqD_ENunSN1A6H8UJODCsEFKt3hSkwtIorffNXAVX9JlVeK-nrkimO17kvPVmLn9Xn1zSl12swW34eZnDbBS-vPb9OGZ84VDWin4Q"/>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Blueberry Scone</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">A warm scone filled with blueberries and served with clotted cream and jam.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$3.75</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Blueberry Scone" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBYqt-o7MOYRYtIQiy88f1NlyVJBVGLDzW8G_5IGQCGfEhh880POgblJmZg4L5csTLjVrf4tfGMTjx7-RjV7c5tu9hysIIABNJi1u9sZTlA0aiNtoHy7bkQDFbS33U9J8Z7_PubPM6ejycKTZtlP4kfqQxR6M8k5Y_HDoVxctXTZoBQUo99CGpmh4uzaFZHOWOm9PBLrD3rPSj7fBlZyJn1KOrYsUBW1w2pjDZ6UpNjsH-2BFsaFle8rd6E7j2xPGa4IYcfodPuQ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="korean-food">
+<h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Korean Food Dishes</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Bibimbap</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">"Mixed rice" with assorted vegetables, beef, a fried egg, and gochujang.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$12.50</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Bibimbap" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcSkB7CFrReq78M-q-7Q_XnNq60iilKNMcDR4g-ULrIgmoc7SIWe_vAiRMDncOaPmlOpCWLAHghISi1-j_JPYMcR3vavPZWxZxIcU6YlQIkXD4qtNNlcautPdoZXrodM-dWlG3Uihfsv9xpyDz0iB0hjMnAfFQ8XXm6zFFv83PR9W4OvqGfvm5AftpkoGOh5CtxNJLJPKg9898TT8Gpju8KAT_rjpZVwYtzUVcywbgCulRV_HgfzXLxzPh8snr-Y4waHpIjTC6SA"/>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Kimchi Jjigae</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">Spicy kimchi stew with tofu, pork, and vegetables. A classic comfort food.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$11.00</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Kimchi Jjigae" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL7RqxZnknT9_kwdbDsWEIVnjuT7abKJHL0gNu18DKOP2nzljfUQvRat7F652sOfyzCXwEV9T2Dy_s-2SelU6k9BiKgv8I8CQEP2lxcq5B9aLfUuoJssGEPZ3R0lEthOD0wweTFgIaF988WuSTxML_wr9sT3c88qrUotrQopth339xaYrI2dfAWB109P8GP6yN9-NG1TPvTXkpq7tbWLaP745Y8TVbcolZom6wB1XJY9-kGKnUDv7fVG3StCPr9eitoxzPCAxzyg"/>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Tteokbokki</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">Spicy rice cakes simmered in a sweet and spicy gochujang sauce with fish cakes.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$9.75</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Tteokbokki" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmDOU85Rz3VTD6HB2e_RZW3ZRz13jC5LdKm9Xoqgek-PTGkRCS3AoBbsL68TAmMEKGtYC6BhgrlMuqiOz0VrSS2mehQRWTbVXEy3YSqhk-nKocI2Qtdb_g4Wxpb-gtMZeQdb5o7ylz-MawlbNV1U4oZ-uHnTANcudrlnhw4XOrfpUDKgY9FIiIeva7OCnhm-svcxFSrDVleQCU9I162hbmhlxFDSHNGE0_um_qw8HVq6HlL8HRS21z4_RE7b_TN8gPMqkTDemu3Q"/>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-900/50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Bulgogi</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-3">Thinly sliced, marinated beef grilled to perfection. Served with rice.</p>
+<button class="flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>$14.00</span>
+<span class="material-symbols-outlined text-base">add_shopping_cart</span>
+</button>
+</div>
+<div class="sm:w-32 h-32 flex-shrink-0">
+<img alt="Bulgogi" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8g5x2s3nb7PkyCkt0jSyFbzMJBAyNr-fE9IRH-PpaE4pfWvKZ6kbxmfMnJ-k5hxxCHzoByXalPNKaB7vAQfEZ1RDgEFHDDy_HOnLSxkzarMz4OY_ty5n2RWrul2etiGA5dPeVL9b1cm8plVEdwdcy_Ip8OiRWTUekl9ikNxRtDhFkE6-ikG-OgGILhQ4L9zQIS8qscpkGbmyaYWwos0z03sr4p5VJspXQwffMQ_VzM--SeIwb_VS2_vfVIgb4QeBMaxEe3i8FJg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</div>
+</body></html>
