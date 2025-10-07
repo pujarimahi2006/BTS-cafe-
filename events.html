@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Purple Cafe - Events</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#bf8cf2",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191121",
+                        "text-light": "#191121",
+                        "text-dark": "#f7f6f8",
+                        "text-muted-light": "#5a5361",
+                        "text-muted-dark": "#a9a2b1",
+                        "border-light": "#e7e4e9",
+                        "border-dark": "#2a2232"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-8.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm4 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-4.5 4h5c.28 0 .5.22.5.5s-.22.5-.5.5h-5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5z"></path>
+</svg>
+<h1 class="text-xl font-bold text-text-light dark:text-text-dark">Purple Cafe</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="menu.html">Menu</a>
+<a class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-bold text-primary" href="events.html">Events</a>
+<a class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex items-center justify-center rounded-lg h-10 px-5 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span>Order Online</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-center bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCzysz2nJoMBRoF4Y1m4jRRRemgEzHuZ84K0479EByg5ONhtcJSecxkZXx52XJDQ41U_2bq8QoWFc9MKmCEfIN9C3rSb2WeAQ7-wsYRJi3uFeQHeEGto9W0j3QiE08en4col1F-Otnj5OHmyMlE8hGsp9LDdup1KidxWtQLrdf955w57W31JrYBI-W6NNIUJ_0V3WbJ8Ukevqo5D5NHkCmtTRMIaqcUMvdijuwn9P4WKVEaRY8nGMSzpKKGXihdkwptC2IPD9rqw");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+<div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-text-light dark:text-text-dark">Upcoming Events</h2>
+<p class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark">
+                        Join us for exciting events at Purple Cafe! From fan gatherings to special performances, there's always something happening.
+                    </p>
+</div>
+<div class="grid gap-12 md:gap-16">
+<div class="bg-background-light dark:bg-background-dark rounded-xl shadow-lg overflow-hidden border border-border-light dark:border-border-dark transition-shadow hover:shadow-2xl">
+<div class="grid md:grid-cols-5 gap-6 md:gap-8 items-center">
+<div class="md:col-span-2 h-64 md:h-full">
+<div class="w-full h-full bg-center bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDy0mSu0WSArK8fwtkRo8Aqxe9ezah-bQv0hhHHbXRrNbMtkc4WtgnuB9KnqSmxwLZYmP-JCes39Wy90NSB2l4kbsz-m4i4qKYzRugyQhwVtHcUN82TfPrWROrzaNd5uPBg_-fncWCMnD_qidtOUm1wAKKzm8qRueEBh0Om17zg9dngfAQdwcJD1jGVsjUxA7tcYZxyuuVA4MQCLWUcXUwoEUmhMdcfwbBro2ER-XI1Qf5GzCkzSJ9oQj6ltMW4vMiefmeXVL6iMw");'></div>
+</div>
+<div class="md:col-span-3 p-6 md:p-8">
+<h3 class="text-2xl font-bold text-text-light dark:text-text-dark">Fan Gathering</h3>
+<p class="mt-2 text-text-muted-light dark:text-text-muted-dark">Meet fellow fans, share stories, and enjoy BTS music together.</p>
+<div class="flex items-center gap-2 mt-4 text-sm text-text-muted-light dark:text-text-muted-dark">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+<span>July 15, 2024</span>
+<span class="material-symbols-outlined text-base ml-2">schedule</span>
+<span>2:00 PM - 4:00 PM</span>
+</div>
+<button class="mt-6 flex items-center justify-center rounded-lg h-11 px-6 bg-primary text-white text-sm font-bold shadow-md hover:bg-opacity-90 transition-all transform hover:scale-105">
+                                    RSVP
+                                </button>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-xl shadow-lg overflow-hidden border border-border-light dark:border-border-dark transition-shadow hover:shadow-2xl">
+<div class="grid md:grid-cols-5 gap-6 md:gap-8 items-center">
+<div class="md:col-span-2 h-64 md:h-full">
+<div class="w-full h-full bg-center bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAft69jiX2GnrJqf7Dn0RSu2Wf0_o2y9nuyT-fyMHlNvwuwX02V2DnOvi4451xos-xQf91RSoE8YX1WgfxJGHRxjaV8kfGUrqVVFbY793SVIanwqOXeW_CKhVy7LZrjGDG31C6moROns4rY8HIntlr8xLSVpkOcJ9eIgl7tidVPNjRxyPq3nkcZDYMZAKWRvZ24_PozomrcDhU8pCqsU5oL5uvy8J84mlqQlUxzsz0HEbBW4wYo52ZiGrpe1YFOIsFXq_pOK7CQqQ");'></div>
+</div>
+<div class="md:col-span-3 p-6 md:p-8">
+<h3 class="text-2xl font-bold text-text-light dark:text-text-dark">Special Performance</h3>
+<p class="mt-2 text-text-muted-light dark:text-text-muted-dark">Enjoy a live performance of BTS hits by a talented cover band.</p>
+<div class="flex items-center gap-2 mt-4 text-sm text-text-muted-light dark:text-text-muted-dark">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+<span>August 5, 2024</span>
+<span class="material-symbols-outlined text-base ml-2">schedule</span>
+<span>7:00 PM - 9:00 PM</span>
+</div>
+<button class="mt-6 flex items-center justify-center rounded-lg h-11 px-6 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                                    Learn More
+                                </button>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-xl shadow-lg overflow-hidden border border-border-light dark:border-border-dark transition-shadow hover:shadow-2xl">
+<div class="grid md:grid-cols-5 gap-6 md:gap-8 items-center">
+<div class="md:col-span-2 h-64 md:h-full">
+<div class="w-full h-full bg-center bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOUEG3iT3_MdRdxX9l2FuunAKL6POmBVWnWginCZu18bijM5oZMyclTIo5ovziOiZWK93hGVqqGNHDWoxquaVi4SX1vJOMUn665uCi39AHF8ph9vC52gUFmRa4fwiRzmQqvx1kxz7Ph6CzmDV_l5MNdXwgdvndubSwLW51L96v38gDsO1ltrMdfA01j09NCvZaBlsgKN-6tBGoQcuqOqnVeswl1hEjqeBo6kLd8BTK4je2ig5XlDWIC74q2qOo6SGM9MHCgAjMAg");'></div>
+</div>
+<div class="md:col-span-3 p-6 md:p-8">
+<h3 class="text-2xl font-bold text-text-light dark:text-text-dark">Album Release Party</h3>
+<p class="mt-2 text-text-muted-light dark:text-text-muted-dark">Celebrate the release of BTS's new album with us! Enjoy exclusive content, giveaways, and more.</p>
+<div class="flex items-center gap-2 mt-4 text-sm text-text-muted-light dark:text-text-muted-dark">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+<span>September 10, 2024</span>
+<span class="material-symbols-outlined text-base ml-2">schedule</span>
+<span>6:00 PM - 8:00 PM</span>
+</div>
+<button class="mt-6 flex items-center justify-center rounded-lg h-11 px-6 bg-primary text-white text-sm font-bold shadow-md hover:bg-opacity-90 transition-all transform hover:scale-105">
+                                    RSVP
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">© 2024 Purple Cafe. All rights reserved.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
